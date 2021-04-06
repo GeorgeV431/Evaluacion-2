@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!---estilos--->
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<!---js--->
+	<script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</head>
+<body>
+	<div id="mensaje"></div>
+	<form method="post" action="#" id="formulario" >
+		<fieldset>
+			<h1>Formulario Actividad Evaluativa </h1>
+		<ul>
+			<li>
+				<label class="short" for="nombre">Nombre</label>
+				<input class="textInput" id="nombre" type="text" placeholder="Nombre" required="true" />
+			</li>
+			<li>
+				<label class="short" for="apellidos">Apellidos</label>
+				<input class="textInput" id="apellidos" type="text" placeholder="Apellidos" required="true"/>
+			</li>
+			<li>
+				<label class="short" for="rut">RUT</label>
+				<input class="textInput" id="rut" type="text" placeholder="RUT sin puntos y con digito verificador Ej: 0000000-0" required="true"/>
+			</li>
+			<li>
+				<label class="short" for="email">Correo Electronico</label>
+				<input class="textInput" id="email" type="email" placeholder="Correo Electronico" required="true"/>
+			</li>
+			<li>
+				<label class="short" for="telefono">Telefono</label>
+				<input class="textInput"  maxlength="9" id="telefono" type="number" placeholder="Telefono (9 digitos)" required="true"/>
+			</li>
+			<hr>
+			<li class="longLi">
+				<label class="long" >Seleccione uno o más lenguajes de programación de su interés</label>
+				<ul>
+					<li>
+						<input type="checkbox" id="python" name="python" value="Python" class="check" >
+  						<label for="python" class="checkbox"> Python</label><br>
+  					</li>
+
+  					<li>
+  						<input type="checkbox" id="java" name="java" value="Java" class="check" >
+  						<label for="java" class="checkbox"> Java</label><br>
+  					</li>
+
+  					<li>
+  						<input type="checkbox" id="typeScript" name="typeScript" value="TypeScript" class="check" >
+  						<label for="typeScript" class="checkbox"> TypeScript</label><br>
+  					</li>
+  					<li>
+  						<input type="checkbox" id="PHP" name="PHP" value="PHP" class="check" >
+  						<label for="PHP" class="checkbox"> PHP</label><br>
+  					</li>
+  					<li>
+  						<input type="checkbox" id="C#" name="C#" value="C#" class="check" >
+  						<label for="C#" class="checkbox"> C#</label><br>
+  					</li>
+  					<li>
+  						<input type="checkbox" id="C++" name="C++" value="C++" class="check" >
+  						<label for="C++" class="checkbox"> C++</label><br>
+  					</li>
+  				</ul>
+			</li>
+			<hr>
+			<li class="longLi">
+				<label class="long" >¿Cuál es su nivel de conocimiento en programación?</label><br>
+				<span id="sliderNum"></span>
+				<input type="range" name="Conocimiento" id="conocimiento" min="0	" max="100" >
+				
+			</li>
+			<hr>
+			<li class="longLi">
+				<label class="long" >¿Cuantos años de experiencia laboral tiene?</label>
+					<div id="radio">
+                        <input type="radio" id="1Año" class="rad" name="Años" value="1" required>
+						<label for="1Año">1</label><br>
+
+                        <input type="radio" id="2Años" class="rad" name="Años" value="2">
+						<label for="2Años">2</label><br>
+
+                        <input type="radio" id="3Años" class="rad" name="Años" value="3">
+						<label for="3Años">3</label><br>
+
+                        <input type="radio" id="4Años" class="rad" name="Años" value="4">
+						<label for="4Años">4</label><br>
+
+                        <input type="radio" id="5Años" class="rad" name="Años" value="5">
+						<label for="5Años">5</label><br>
+					</div>
+			</li>
+			<hr>
+			<li class="longLi">
+				<label class="long" for="descripcion:">Descripción breve acerca de usted:</label>
+				<textarea maxlength="300" id="descripcion" required="true"></textarea>
+				<label id="text">Maximo 300 caracteres.</label>
+			</li>
+			<li id="buttonS">
+				<button type="submit" >Enviar</button>
+			</li>
+			<li id="buttonR">
+				<button type="button" onclick="limpiarDatos();" >Borrar Todo </button>
+			</li>
+
+		</ul>
+		</fieldset>
+	</form>
+	<script src="" async defer></script>
+</body>
+</html>
